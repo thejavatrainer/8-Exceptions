@@ -8,6 +8,6 @@ public class Deliverable {
     }
 
     public void performAction() {
-        // ...
+        System.out.println("sent "+internalNumber);;
     }
 }

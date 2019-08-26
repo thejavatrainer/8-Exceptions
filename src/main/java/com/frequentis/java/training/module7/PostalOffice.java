@@ -17,12 +17,12 @@ public class PostalOffice {
     }
 
     public void process(List<String> deliverables) {
-        deliverables = new ArrayList<>();
+        this.deliverables = new ArrayList<>();
         // ...
 
         for (String deliverable : deliverables) {
             // ...
-            parseDeliverable(deliverable); // would be great to catch just one type of exception
+           // parseDeliverable(deliverable); // would be great to catch just one type of exception
             // ...
         }
 

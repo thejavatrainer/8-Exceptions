@@ -1,12 +1,12 @@
 package com.frequentis.java.training.module7;
 
-import com.frequentis.java.training.module7.exception.InvalidCombinedCaseDeliverable;
-import com.frequentis.java.training.module7.exception.InvalidLowerCaseDeliverable;
-import com.frequentis.java.training.module7.exception.InvalidUpperCaseDeliverable;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import com.frequentis.java.training.module7.exception.InvalidCombinedCaseDeliverable;
+import com.frequentis.java.training.module7.exception.InvalidLowerCaseDeliverable;
+import com.frequentis.java.training.module7.exception.InvalidUpperCaseDeliverable;
 
 public class PostalOffice {
     private final PostalSafe safe;
@@ -22,7 +22,7 @@ public class PostalOffice {
 
         for (String deliverable : deliverables) {
             // ...
-           // parseDeliverable(deliverable); // would be great to catch just one type of exception
+            // parseDeliverable(deliverable); // would be great to catch just one type of exception
             // ...
         }
 
@@ -40,7 +40,7 @@ public class PostalOffice {
     }
 
     private void parseDeliverable(String deliverable) throws InvalidLowerCaseDeliverable, InvalidUpperCaseDeliverable,
-            InvalidCombinedCaseDeliverable { // and maybe more
+                                                             InvalidCombinedCaseDeliverable { // and maybe more
         // ...
         int radix = getPossibleRadixFromString(deliverable);
         int internalNumber = Integer.parseInt(deliverable, radix);

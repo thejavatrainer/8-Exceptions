@@ -18,7 +18,6 @@ public class Validator {
     private Integer convertBase16(String number) throws ConversionException{
 
         if(isHexa(number)){
-            //return Long.parseLong(number, 16);
             return Integer.parseInt(number, 16) ;
         }
         else{
